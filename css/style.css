@@ -1,0 +1,141 @@
+*{
+	padding:0;
+	margin:0;
+	text-decoration:none;
+	list-style:none;
+	box-sizing: border-box;
+}
+body{
+	font-family: montserrat;
+}
+nav{
+	position: fixed;
+	top:0px;
+	z-index:12;
+	background:#000080;
+	height:60px;
+	width:100%;
+}
+label.logo{
+	color: white;
+	font-size: 35px;
+	line-height:80px;
+	padding: 0 60px;
+	font-weight:bold;
+}
+nav ul{
+	float:right;
+	margin-right:20px;
+}
+nav ul li{
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+nav ul li a{
+	color:white;
+	font-size:14px;
+	padding:3px;
+	border-radius: 3px;
+}
+/*a.active,a:hover{
+	background:#1b9bff;
+	transition: .5s;
+}*/
+@media (max-width: 952px){
+	label.logo{
+		font-size:30px;
+		padding-left:50px;
+	}
+	nav ul li a{
+		font-size:16px;
+	}
+}
+@media (max-width: 858px){
+	nav ul li a.second,a.third,a.fourth,a.fifth,a.sixth,a.seventh,a.first{
+		display: none;
+	}
+	ul{
+		position: fixed;
+		width:100%;
+		height:100vh;
+		top:80px;
+		left:0;
+	}
+	nav ul li a.chat{
+		position:fixed;
+		bottom:510px;
+		left:730px;	
+	}
+	.wrap{
+		position: relative;
+		left:-320px;
+		max-width:55px;
+		height:100vh;
+	}
+}
+@media (max-width: 320px){
+	nav ul li a.second,a.third,a.fourth,a.fifth,a.sixth,a.seventh,a.first{
+		display: none;
+	}
+	ul{
+		position: fixed;
+		width:100%;
+		height:100%;
+		top:80px;
+		left:0;
+	}
+	nav ul li a.chat{
+		position:fixed;
+		bottom:510px;
+		left:730px;	
+	}
+	.wrap{
+		position: relative;
+		left:-300px;
+		max-width:55px;
+		height:100vh;
+	}
+	.search-text{
+		width: 1200px;
+	}
+}
+.search-txt{
+	border:none;
+	outline:none;
+	font-size:16px;
+	line-height:32px;
+	width:250px;
+	position:relative;
+	bottom:560px;
+	padding-left:30px;
+	left:-15px;
+	top:-15px;
+	border-radius:2px;
+}
+.search-btn{
+	position:relative;
+	left:15px;
+	top:-15px;
+	z-index:2;
+}
+.wrap{
+	width:1000px;
+	margin:auto;
+	margin-top:155px;
+}
+.card{
+	box-shadow:0 4px 8px 0 rgba(0,0,0,0.6);
+	transition: 0.4s;
+	width:700px;
+	position:relative;
+	top:-90px;
+	left:100px;	
+	background:#fff;
+	font-size:16px;
+	font-family:sans-serif;
+	margin:10px;
+}
+.container{
+	padding:2px 16px;
+}
